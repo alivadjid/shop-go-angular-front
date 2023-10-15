@@ -21,3 +21,7 @@ submit forms:
 
 on Register using submit with reqular forms
 bind values from component -> ngModel
+
+```
+ng generate environments
+```
