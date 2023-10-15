@@ -1,1 +1,49 @@
-<p>register works!</p>
+<main class="form-signin w-100 m-auto" (submit)="submit()">
+  <form>
+    <h1 class="h3 mb-3 fw-normal">Please register</h1>
+    <input
+      [(ngModel)]="firsName"
+      name="firstName"
+      class="form-control"
+      placeholder="First Name"
+      required
+    />
+
+    <input
+      [(ngModel)]="lastName"
+      name="lastName"
+      class="form-control"
+      placeholder="Last Name"
+      required
+    />
+
+    <input
+      [(ngModel)]="email"
+      name="email"
+      type="email"
+      class="form-control"
+      placeholder="Email Address"
+      required
+    />
+
+    <input
+      [(ngModel)]="password"
+      name="password"
+      type="password"
+      class="form-control"
+      placeholder="Password"
+      required
+    />
+
+    <input
+      [(ngModel)]="passwordConfirm"
+      name="passwordConfirm"
+      type="password"
+      class="form-control"
+      placeholder="Password Confirm"
+      required
+    />
+
+    <button class="btn btn-primary w-100 py-2" type="submit">Submit</button>
+  </form>
+</main>

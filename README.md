@@ -13,3 +13,11 @@ ng g c public
 ng g c public/login
 ng g c public/register
 ```
+
+submit forms:
+
+1. Regular forms
+2. Reactive forms
+
+on Register using submit with reqular forms
+bind values from component -> ngModel
