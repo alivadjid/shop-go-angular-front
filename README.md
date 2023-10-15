@@ -11,4 +11,5 @@ ng g m secure
 ng g c secure
 ng g c public
 ng g c public/login
+ng g c public/register
 ```
