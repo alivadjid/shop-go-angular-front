@@ -3,17 +3,11 @@ import { CommonModule } from '@angular/common';
 import { PublicComponent } from './public.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-
-
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-  declarations: [
-    PublicComponent,
-    LoginComponent,
-    RegisterComponent
-  ],
-  imports: [
-    CommonModule
-  ]
+  declarations: [PublicComponent, LoginComponent, RegisterComponent],
+  imports: [CommonModule, RouterModule],
+  exports: [PublicComponent],
 })
-export class PublicModule { }
+export class PublicModule {}
