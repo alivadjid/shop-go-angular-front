@@ -19,9 +19,11 @@ submit forms:
 1. Regular forms
 2. Reactive forms
 
-on Register using submit with reqular forms
+on Register using submit with reqular forms in register form
 bind values from component -> ngModel
 
 ```
 ng generate environments
 ```
+
+Reactive forms in login

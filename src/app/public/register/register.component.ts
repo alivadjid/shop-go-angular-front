@@ -6,7 +6,7 @@ import { environment } from 'src/environments/environment.development';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
-  styleUrls: ['./register.component.css'],
+  styleUrls: ['./register.component.css', './../public.component.css'],
 })
 export class RegisterComponent implements OnInit {
   firsName = '';
