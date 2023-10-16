@@ -10,12 +10,18 @@ export class AuthService {
   constructor(protected http: HttpClient) {}
 
   login(data: { email: string; password: string }): Observable<any> {
-    return this.http.post(`${environment.api}/login`, data, {
+    // return this.http.post(`${environment.api}/login`, data, {
+    return this.http.post(`/proxy/login`, data, {
       withCredentials: true,
     });
   }
 
-  register(data): Observable<any> {
+  register(data: {}): Observable<any> {
     return this.http.post(`${environment.api}/login`, data);
+  }
+
+  user(): Observable<any> {
+    // return this.http.get(`${environment.api}/user`, { withCredentials: true });
+    return this.http.get(`/proxy/user`, { withCredentials: true });
   }
 }

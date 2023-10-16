@@ -33,3 +33,5 @@ Services. How to use services. Login and Register functions go in auth service
 ```
 ng g s services/auth
 ```
+
+Authenticated user
