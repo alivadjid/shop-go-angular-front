@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment.development';
 import { Observable } from 'rxjs';
+import { User } from '../interfaces/user';
 
 @Injectable({
   providedIn: 'root', // same as include in module.providers. But this is much cleaner
@@ -16,12 +17,12 @@ export class AuthService {
     });
   }
 
-  register(data: {}): Observable<any> {
-    return this.http.post(`${environment.api}/login`, data);
+  register(data: {}): Observable<User> {
+    return this.http.post<User>(`${environment.api}/login`, data);
   }
 
-  user(): Observable<any> {
+  user(): Observable<User> {
     // return this.http.get(`${environment.api}/user`, { withCredentials: true });
-    return this.http.get(`/proxy/user`, { withCredentials: true });
+    return this.http.get<User>(`/proxy/user`, { withCredentials: true });
   }
 }

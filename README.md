@@ -35,3 +35,10 @@ ng g s services/auth
 ```
 
 Authenticated user
+
+interfaces
+
+```
+ng g i interfaces/user
+ng g i interfaces/role
+```
