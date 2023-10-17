@@ -9,7 +9,10 @@
     <a routerLink="/profile" class="p-2 text-white text-decoration-none">
       {{ user?.first_name }} {{ user?.last_name }}
     </a>
-    <a routerLink="/login" class="p-2 text-white text-decoration-none"
+    <a
+      routerLink="/login"
+      (click)="logout()"
+      class="p-2 text-white text-decoration-none"
       >Sign out</a
     >
   </nav>

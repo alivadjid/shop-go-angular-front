@@ -42,3 +42,5 @@ interfaces
 ng g i interfaces/user
 ng g i interfaces/role
 ```
+
+Logout
