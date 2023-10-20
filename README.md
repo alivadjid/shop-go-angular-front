@@ -63,3 +63,6 @@ ng g c secure/dashboard
 ```
 
 update profile information and password
+
+Event emitters similar Redux or Vuex
+define event emitter. And subscribe to it, emit it
