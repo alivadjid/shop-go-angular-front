@@ -44,3 +44,5 @@ ng g i interfaces/role
 ```
 
 Logout
+
+Inputs like props
