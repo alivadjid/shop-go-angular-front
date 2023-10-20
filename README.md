@@ -46,3 +46,9 @@ ng g i interfaces/role
 Logout
 
 Inputs like props
+
+Interceptors
+
+```
+ng g interceptor interceptors/credentials
+```

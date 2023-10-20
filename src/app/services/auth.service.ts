@@ -13,7 +13,7 @@ export class AuthService {
   login(data: { email: string; password: string }): Observable<any> {
     // return this.http.post(`${environment.api}/login`, data, {
     return this.http.post(`/proxy/login`, data, {
-      withCredentials: true,
+      // withCredentials: true,
     });
   }
 
@@ -23,10 +23,18 @@ export class AuthService {
 
   user(): Observable<User> {
     // return this.http.get(`${environment.api}/user`, { withCredentials: true });
-    return this.http.get<User>(`/proxy/user`, { withCredentials: true });
+    return this.http.get<User>(`/proxy/user`, {
+      // withCredentials: true
+    });
   }
 
   logout(): Observable<void> {
-    return this.http.post<void>(`/proxy/logout`, {}, { withCredentials: true });
+    return this.http.post<void>(
+      `/proxy/logout`,
+      {},
+      {
+        // withCredentials: true
+      }
+    );
   }
 }
