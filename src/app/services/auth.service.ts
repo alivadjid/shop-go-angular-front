@@ -37,4 +37,11 @@ export class AuthService {
       }
     );
   }
+
+  updateInfo(data: any): Observable<User> {
+    return this.http.put<User>(`proxy/users/info`, data);
+  }
+  updatePassword(data: any): Observable<User> {
+    return this.http.put<User>(`proxy/users/password`, data);
+  }
 }

@@ -54,3 +54,12 @@ ng g interceptor interceptors/credentials
 ```
 
 include withCredentials interceptord
+
+Profile
+
+```
+ng g c secure/profile
+ng g c secure/dashboard
+```
+
+update profile information and password
