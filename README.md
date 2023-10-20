@@ -52,3 +52,5 @@ Interceptors
 ```
 ng g interceptor interceptors/credentials
 ```
+
+include withCredentials interceptord
